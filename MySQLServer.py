@@ -11,8 +11,8 @@ def create_database():
         mydb.commit()
         print("Database 'alx_book_store' created successfully!")
 
-    except Error as e:
-        print(f"Error: {e}")
+    except:
+        "except mysql.connector.Error"
 
     finally:
         if mydb.is_connected():
